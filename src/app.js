@@ -34,5 +34,22 @@ app.use(express.json({limit: "16kb"}))   //--> limiting the json to prevent cras
 app.use(express.urlencoded({extended: true,limit:"16kb"}))
 app.use(express.static("public"))
 app.use(cookieParser())
+/*
+CORS:
 
+Allows your frontend (e.g., React, Angular) to communicate with your backend.
+
+JSON/URL-encoded Parsing:
+
+Makes it easy to work with data sent by the frontend.
+
+Static Files:
+
+Serves assets like images, CSS, and JavaScript.
+
+Cookie Parsing:
+
+Simplifies working with cookies for session management or authentication.
+
+*/
 export {app}
